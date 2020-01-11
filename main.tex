@@ -1,34 +1,10 @@
-%-----------------------------------------------------------------------------------------------------------------------------------------------%
-%	The MIT License (MIT)
-%
-%	Copyright (c) 2015 Jan Küster
-%
-%	Permission is hereby granted, free of charge, to any person obtaining a copy
-%	of this software and associated documentation files (the "Software"), to deal
-%	in the Software without restriction, including without limitation the rights
-%	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-%	copies of the Software, and to permit persons to whom the Software is
-%	furnished to do so, subject to the following conditions:
-%	
-%	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-%	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-%	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-%	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-%	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-%	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-%	THE SOFTWARE.
-%	
-%
-%-----------------------------------------------------------------------------------------------------------------------------------------------%
-
-
 %============================================================================%
 %
 %	DOCUMENT DEFINITION
 %
 %============================================================================%
 
-%we use article class because we want to fully customize the page and dont use a cv template
+
 \documentclass[10pt,A4]{article}	
 
 
@@ -49,8 +25,6 @@
 %----------------------------------------------------------------------------------------
 %	FONT
 %----------------------------------------------------------------------------------------
-
-% some tex-live fonts - choose your own
 
 %\usepackage[defaultsans]{droidsans}
 %\usepackage[default]{comfortaa}
@@ -80,7 +54,6 @@
 %define page styles using geometry
 \usepackage[a4paper]{geometry}		
 
-% for example, change the margins to 2 inches all round
 \geometry{top=1.75cm, bottom=-.6cm, left=1.5cm, right=1.5cm} 	
 
 %use customized header
@@ -231,14 +204,6 @@
 %	 CV EVENT
 %----------------------------------------------------------------------------------------
 
-% creates a stretched box as cv entry headline followed by two paragraphs about 
-% the work you did
-% param 1:	event time i.e. 2014 or 2011-2014 etc.
-% param 2:	event name (what did you do?)
-% param 3:	institution (where did you work / study)
-% param 4:	what was your position
-% param 5:	some words about your contributions
-%
 \newcommand{\cvevent}[5]
 {
 \vspace{8pt}
@@ -265,10 +230,10 @@
 	\end{tabular*}
 \vspace{-12pt}
 \textcolor{softcol}{\hrule}
-\vspace{6pt}
+\vspace{3pt}
 	\begin{tabular*}{1\textwidth}{p{2.3cm} p{14.4cm}}
 &		 #4\\[3pt]
-&		 \larrow{bgcol}  #5\\[6pt]
+&		 \larrow{bgcol}  #5\\[1pt]
 	\end{tabular*}
 
 }
@@ -373,7 +338,7 @@
 %----------------------------------------------------------------------------------------
 \vspace{-20.55pt}
 
-% use this for multiple words like working titles etc.
+
 %\hspace{-0.25\linewidth}\colorbox{bgcol}{\makebox[1.5\linewidth][c]{\hspace{46pt}\HUGE{\textcolor{white}{\textsc{Jan Küster}} } \textcolor{sectcol}{\rule[-1mm]{1mm}{0.9cm}} \parbox[b]{5cm}{   \large{ \textcolor{white}{{IT Consultant}}}\\
 % \large{ \textcolor{white}{{Resume}}}}
 %}}
@@ -407,7 +372,7 @@
 
 \vspace{-114pt}
 
-\metasection{About me:}{\textbf{\textit{I would like to introduce myself as a person of integrity, commitment and capability}}. Throughout my career as a software developer, I was working on a wide range of technologies and was driving results regardless of the domain. Climbing higher up on the career ladder is all about connecting the dots and creating the bigger picture is something that I always believe in and work towards.\newline}
+\metasection{About me:}{\textbf{\textit{I would like to introduce myself as a person of integrity, commitment and capability}}\newline}
 
 \metasection{Tech:}{\textbf{C, C++, Java, Python, Flex/Bison, Shell Scripting, gdb, valgrind, Git, Perforce, Jira, Office Tools\newline}}
 \metasection{Interests:}{\textbf{Data Science \& Machine Learning, Deep Learning, Algorithms, OOP, C++ Template Meta Programming}}
@@ -418,10 +383,8 @@
 %	SUMMARAY (optional)
 %----------------------------------------------------------------------------------------
 
-%\cvsection{Summary}\\
-%I am a digital media graduate (M.Sc.) with project experience in educational research as well as in the private sector. During my studies I focused on e-assessment software and moved over to b2b software for IBM Notes Domino.
-
-%Currently I develop and evaluate the next generation learning management system with Meteor based on an extensive nursing curriculum for healthcare education.  I also love fitness, martial arts, videogames, news and Sci-Fi series.\\[-2pt]
+\cvsection{Summary}\\
+ Throughout my career as a software developer, I was working on a wide range of technologies and was driving results regardless of the domain. Climbing higher up on the career ladder is all about connecting the dots and creating the bigger picture is something that I always believe in and work towards.\\[-2pt]
 
 %============================================================================%
 %
